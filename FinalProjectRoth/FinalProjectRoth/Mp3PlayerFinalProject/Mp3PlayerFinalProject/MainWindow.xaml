@@ -1,0 +1,20 @@
+﻿<Window x:Class="Mp3PlayerFinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mp3PlayerFinalProject"
+        mc:Ignorable="d"
+        Title="Roth's AudioMedia Player" Height="353.69" Width="509.2" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Margin="10,10,10,9.8">
+            <Label x:Name="timerLabel" Content="Nothing is playing..." HorizontalAlignment="Left"  Margin="10,0,0,0" Width="472" Height="47"/>
+            <Label x:Name="currentFilelabel" Content="Current File:" Margin="8"></Label>
+            <Label x:Name="FileName" HorizontalAlignment="Left" Content="" Margin="10,0,0,0" Width="472" Height="50"/>
+            <Button x:Name="playBtn" Content="Play" HorizontalAlignment="Left" Width="97" Margin="8,8,0,8" Height="20" Click="PlayBtn_Click"/>
+            <Button x:Name="stopBtn" HorizontalAlignment="Left" Content="Stop" Margin="8,8,0,8"  Width="97" Height="20" Click="StopBtn_Click"/>
+            <Button x:Name="pauseBtn" HorizontalAlignment="Left" Content="Pause" Margin="8,8,0,8" RenderTransformOrigin="2.116,5.563" Width="97" Height="20" Click="PauseBtn_Click"/>
+            <Button x:Name="browseBtn" Content="Browse" Width="97" Height="20" HorizontalAlignment="Left" Margin="8" Click="BrowseBtn_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
